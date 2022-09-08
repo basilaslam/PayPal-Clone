@@ -10,15 +10,13 @@
     padding: 0;
 }
 
-
 body {
     background-color: #FFF;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
-section{
-    margin-top: 4rem;
-}
+
 .navbar{
     background-color: #FFFF;
 
@@ -58,6 +56,11 @@ section{
 .nav-link{
     font-size: .8rem !important;
     font-weight: 400;
+    display: inline !important;
+}
+nav-item{
+    display: inline !important;
+
 }
 .nav-link :hover{
     animation: border_anim 1s linear forwards;
@@ -133,8 +136,9 @@ section{
     color: #000 !important;
 }
 .top-hero-text h1{
-    max-width: 6.75em;
-    font-size: 5rem;
+    /* z-index: 2; */
+    /* max-width: 6.75em; */
+    /* font-size: 5rem; */
     font-weight: 500;
     letter-spacing: -.04em;
     color: var(--primary_color);
@@ -155,7 +159,52 @@ section{
 }
 
 .second-section-hero{
-    font-size: 5em;
     font-weight: bolder;
     color: var(--primary_color);
+}
+.primary-text{
+    color: var(--primary_color);
+    font-weight: bold;
+}
+
+.secondary-text{
+    color: var(--secondary_color);
+    font-weight: bold;
+}
+
+.bg-yellow{
+    background-color: #FFD140;
+}
+
+/* Footer */
+
+footer a{
+    font-weight: 500 !important;
+    color: var(--primary_color) !important;
+    margin-left: .5rem;
+}
+
+
+sup{
+    margin-right: .50rem;
+}
+
+
+/* SVG */
+.hero-graphic-section{
+    position: absolute;
+    top: 60px;
+}
+.bg-blue-primary{
+    background-color: var(--primary_color);
+}
+.bg-blue-secondary{
+    background-color: var(--secondary_color);
+}
+/* Media Screen */
+
+@media  (max-width: 768px){
+    .font-big{
+        font-size: 1.5rem;
+    }
 }
